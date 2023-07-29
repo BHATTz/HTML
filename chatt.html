@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOX</title>
+  <script>
+    know = {
+      "Hello": "&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp Hi there!",
+      "hey": "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Hi there!",
+      "What is your name?": "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp I am Nikita",
+      "How are you?": "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp I am fine"
+    };
+    function talk() {
+      var user = document.getElementById("userBox").value;
+      document.getElementById("userBox").value = "";
+      document.getElementById("box").innerHTML += user + "<br>";
+      if (user in know) {
+        document.getElementById("box").innerHTML += know[user] + "<br>";
+
+      } else {
+        document.getElementById("box").innerHTML += "I don't understand ...<br>";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <p id="box">CHATBOX<br></p>
+  <input id="userBox" type="text" onkeydown="if(event.keyCode == 13) {talk()}">
+</body>
+
+</html>

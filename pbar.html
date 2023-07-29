@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>my progressbar</title>
+  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js">
+  </script>
+
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.10.4/jquery-ui.js">
+  </script>
+
+  <style type="text/css">
+    .ui-widget-header {
+      background: gray;
+      border: 1px solid black;
+    }
+  </style>
+  <script>
+    $(function () {
+      $("#progressbar").progressbar({
+        value: 90
+
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <div id="progressbar">
+  </div>
+</body>
+
+</html>

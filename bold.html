@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <p>First Sentence</p>
+  <p>Second Sentence</p>
+  <p>Third Sentence</p>
+  <p>Fourth Sentence</p>
+  <p>Fivth Sentence</p>
+
+  <script>
+    $('p').each(function () {
+      var pdata = $(this);
+      pdata.html(pdata.text().replace(/(^\w+)/, '<strong>$1</strong>'));
+    }); 
+  </script>
+</body>
+
+</html>

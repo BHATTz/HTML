@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title> Responsive table using Bootstrap. </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"> </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"> </script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<style>
+  body {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+  }
+
+  h1 {
+    position: relative;
+    padding: 10;
+    margin: 10;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: red;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+
+  @media screen and (max-width: 575px) {
+    .table-xs-responsive th {
+      width: 100% !important;
+      display: block !important;
+      box-sizing: border-box;
+    }
+
+    .table-xs-responsive td {
+      width: 100% !important;
+      display: block !important;
+      box-sizing: border-box;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .table.table-sm-responsive th {
+      width: 100% !important;
+      display: block !important;
+      box-sizing: border-box;
+    }
+
+    .table.table-sm-responsive td {
+      width: 100% !important;
+      display: block !important;
+      box-sizing: border-box;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .table.table-sm-responsive th {
+      width: 100% !important;
+      display: block !important;
+      box-sizing: border-box;
+    }
+
+    .table.table-sm-responsive td {
+      width: 100% !important;
+      display: block !important;
+      box-sizing: border-box;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .table.table-sm-responsive th {
+      width: 100% !important;
+      display: block !important;
+      box-sizing: border-box;
+    }
+
+    .table.table-sm-responsive td {
+      width: 100% !important;
+      display: block !important;
+      box-sizing: border-box;
+    }
+  }
+
+  .info {
+    color: yellow;
+  }
+
+  .success {
+    color: #00C851;
+  }
+
+  .warning {
+    color: red;
+  }
+</style>
+
+<body>
+  <table class="table table-xs-responsive table-hover"
+    summary="An example of a responsive table using Bootstrap breakpoints." aria-role="table">
+    <h1 class="text-center"> Bootstrap 4 Responsive Table </h1>
+    <caption class="text-center">Rather than using the overflow feature of the built in Bootstrap
+      <code>.table-responsive</code>, this option will stack each cell at the set breakpoint.
+    </caption>
+    <thead>
+      <tr>
+        <th> Entry Header 1 </th>
+        <th> Entry Header 2 </th>
+        <th> Entry Header 3 </th>
+        <th> Entry Header 4 </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="success">
+        <td> Entry First Line 1 </td>
+        <td> Entry First Line 2 </td>
+        <td> Entry First Line 3 </td>
+        <td> Entry First Line 4 </td>
+      </tr>
+      <tr class="info">
+        <td> Entry Line 1 </td>
+        <td> Entry Line 2 </td>
+        <td> Entry Line 3 </td>
+        <td> Entry Line 4 </td>
+      </tr>
+      <tr class="warning">
+        <td> Entry Last Line 1 </td>
+        <td> Entry Last Line 2 </td>
+        <td> Entry Last Line 3 </td>
+        <td> Entry Last Line 4 </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

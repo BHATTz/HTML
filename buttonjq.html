@@ -1,0 +1,52 @@
+<!-- create a form in which you have having a submit button and reset button -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("#d")[0].reset()
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <br>
+  <br>
+  <br>
+  <center>
+    <form id="d" action="/cgi-bin/test.cgi" name="geek">
+      <table cellspacing="0" cellpadding="3" border="1">
+        <tr>
+          <td align="center">Username</td>
+          <td>
+            <input type="text" name="name" />
+          </td>
+        </tr>
+        <tr>
+          <td align="center">Email</td>
+          <td>
+            <input type="text" name="name" />
+          </td>
+        </tr>
+        <tr>
+          <td align="center">Password</td>
+          <td>
+            <input type="password" />
+          </td>
+        </tr>
+
+      </table>
+      <br>
+      <input type="submit" value="Submit" />
+      <input type="reset" value="reset button" />
+    </form>
+  </center>
+</body>
+
+</html>

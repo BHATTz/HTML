@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h2>Object JSON</h2>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+
+  <script>
+    const myJSON = '{"name":"BHATT", "age":20, "MCA":"22MCA20069"}';
+    const Obj = JSON.parse(myJSON);
+    document.getElementById("demo").innerHTML = Obj.name;
+    document.getElementById("demo1").innerHTML = Obj["age"];
+  </script>
+
+</body>
+
+</html>

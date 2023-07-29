@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <script>
+    know = {
+      "hello": "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  HI THERE!",
+      "Hello": "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  HI THERE!",
+      "HELLO": "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  HI THERE!",
+      "WHO ARE YOU?": "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  I AM ABCD",
+      "WHO ARE YOU?": "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  I AM FINE",
+      "HOW OLD ARE YOU": "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  ___age",
+    };
+    function talk() {
+      var user = document.getElementById("userBox").value;
+      document.getElementById("userBox").value = "";
+      document.getElementById("chatlog").innerHTML += user + "<br>";
+
+      if (user in known) {
+        document.getElementById("chatLog").innerHTML += know[user] + "<br>";
+      } else {
+        document.getElementById("chatlog").innerHTML += "I do not Understand..."
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <p id="chatlog">CHATT BOT <br></p>
+  <input id="userbox" type="text" onkeydown="if(event.keyCode == 13) {talk()}">
+</body>
+
+</html>

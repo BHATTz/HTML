@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <style>
+    p span {
+      text-decoration: underline;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-git.js">
+  </script>
+</head>
+
+<body>
+  <p>
+    A sinking, uncomfortable feeling that I know all too well. It is the same feeling that comes on Sunday evenings as
+    another week in the office beckons. The same feeling that comes when the long awaited annual two week holiday is
+    almost over. I remember the exact same feeling a few years ago when I was travelling - I was sitting in a small
+    coffee shop in Bali when I realised that I had passed the half way point of my trip. It hit me hard then. The party
+    would soon be over. The glass was now more empty than full.
+  </p>
+  <script>
+    $(document).ready(function () {
+      $('p').each(function () {
+        var text_words =
+          $(this).text().split(' ');
+        $(this).empty().html(function () {
+          for (i = 0; i < text_words.length; i++) {
+            if (i === 0) {
+              $(this).append('<span>'
+                + text_words[i] + '</span>');
+            }
+            else {
+              $(this).append(' <span>'
+                + text_words[i] + '</span>');
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

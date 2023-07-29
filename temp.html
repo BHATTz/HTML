@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="temp.css">
+    <link rel="stylesheet" href="temp.js">
+    <title>SET 1 Question 1</title>
+  </head>
+  <body>
+    <div class="container">
+<div id="myDIV">
+  <img src="/UI/resources/I2.jpg" alt="Norway" style="width: 50%" />
+</div>
+      <div class="container">
+        <p>What a beautiful View</p>
+        <p>What a beautiful sunrise</p>
+        <button onclick="myFunction()">Click Me</button>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+var colorChanger = document.getElementsByTagName("button")[0];
+colorChanger.addEventListener("click", function () {
+  document.querySelector("p").style.color = "red";
+});
+      </script>
+  </body>
+</html>
